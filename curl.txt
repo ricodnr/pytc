@@ -1,0 +1,53 @@
+curl -X 'POST' \
+  'https://dev-api-ndnt-portal.hubecom.com/api/export/electricity-payment-infor' \
+  -H 'accept: */*' \
+  -H 'Content-Type: application/json' \
+  -H 'Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImF1dGgiOiJST0xFX0FETUlOIiwiZXhwIjoxNjgzMzczODM4fQ.Rk0hAl1KcP5OQrlcSs9me8NUfX1_gfWYnGNqShQV6UUZ_HCekHb6Cbx39atSH0YWhZhSBGXJYcWFpOAs5PyITQ' \
+  -d '{
+  "paymentPeriodIds": [
+    1002
+  ],
+  "invoices": [
+  {
+    "id": 3051,
+    "code": "ms002",
+    "content": "Tiền điện H03019 (09/01/2023 - 07/04/2023)",
+    "signature": "kh002",
+    "number": "002",
+    "date": "2023-04-26",
+    "taxCode": "0314594040",
+    "amount": 12,
+    "vat": 0.1,
+    "amountVat": 1,
+    "totalAmount": 13,
+    "linkEC": "link002",
+    "payInvoiceId": 1003,
+    "codeSearchEC": "tc002",
+    "electricInvoiceFile": "04-19-2023-16-42-05-e1f3a9a1-74af-4d1a-bcd7-f6b6cdde3010.pdf",
+    "invoiceFileXml": "04-19-2023-16-42-09-19a2f14f-e6fd-475f-900d-9f4ba193f1c3.xml",
+    "supplierId": 312731
+  },
+  {
+    "id": 1003,
+    "code": "ms0041",
+    "content": "Tiền điện H03019 (09/01/2023 - 07/04/2023)",
+    "signature": "kh0041",
+    "number": "0041",
+    "date": "2023-01-10",
+    "taxCode": "0314594040",
+    "amount": 40878,
+    "vat": 0.1,
+    "amountVat": 4088,
+    "totalAmount": 44966,
+    "linkEC": "link411",
+    "payInvoiceId": 1003,
+    "codeSearchEC": "tc411",
+    "electricInvoiceFile": "04-07-2023-05-02-20-6cbda1fb-a7a2-461f-ac79-a325f9f987fe.pdf",
+    "invoiceFileXml": "04-07-2023-05-02-23-b5eae4a6-0ccd-4b53-8bcf-4da0189f2586.xml",
+    "supplierId": 312731
+  }
+],
+  "amount": 40890,
+  "amountVat": 4089,
+  "totalAmount": 44979
+}'
